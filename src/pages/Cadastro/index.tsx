@@ -1,29 +1,24 @@
+import './styles.css';
+import FormDepartment from 'components/Form/formDepartment';
+import FormPerson from 'components/Form/formPerson';
+import { useEffect, useState } from 'react';
 
-export default function Cadastro(){
-  return(
+export default function Cadastro() {
+  const [selectValue, setSelectValue]= useState<string>();
+  
+
+  return (
     <div>
-      <h2 >Formulário de cadastro de pessoas</h2>
-      <form>
-        <label >Nome</label>
-        <input type = "text" id="Name" />
-
-        <label >CPF</label>
-        <input type = "text" id="CPF"  />
-
-        <label >Data de nascimento</label>
-        <input type ="date" id="Birth_Date" placeholder = "DD/MM/AAAA" />
-
-        <label >Id do pai</label> 
-        <input type ="text" ></input>
-
-        <label >Id da mãe</label> 
-        <input type ="text" />
-
-        <label >É funcionário? [1-sim / 0-não]</label> 
-        <input type ="text"  />
-        <button>Cadastrar</button>
-      </form>
+      <h2 >Formulário de cadastro </h2>
+      <div className='div_select'>
+        <label >Selecione o tipo de cadastro que deseja realizar</label>
+        <select name="select" onChange={ e =>{setSelectValue(e.target.value);}} className='selectCadastro'>
+          <option value="person" >Pessoa</option>
+          <option value="department" selected >Departamento</option>
+        </select>
+        {selectValue==='person'?<FormPerson/>:<FormDepartment/>}
+      </div>
     </div>
-       
+
   );
 }

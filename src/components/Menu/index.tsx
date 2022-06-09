@@ -11,7 +11,7 @@ export default function Menu() {
     to: '/cadastro'
   }, {
     label: 'Sobre',
-    to: '/sobre'
+    to: '/about'
   }];
   return (
     <nav className={styles.menu}>
