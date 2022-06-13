@@ -8,7 +8,7 @@ export default function Menu() {
     to: '/'
   }, {
     label: 'Cadastro',
-    to: '/cadastro'
+    to: '/registration'
   }, {
     label: 'Sobre',
     to: '/about'

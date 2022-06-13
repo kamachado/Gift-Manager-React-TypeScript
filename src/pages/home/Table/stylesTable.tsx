@@ -7,6 +7,7 @@ padding:0.05em;
 background: #181717;
 text-align: center;
 width: 40em;
+min-width:10em;
 position: absolute;
 left:10%;
 `;
@@ -26,6 +27,7 @@ background-color: aliceblue;
 export const Th = styled.th`
      padding:0.05em;
      width: 5em; 
+     min-width:2em;
      font-size:1em;
 `;
 

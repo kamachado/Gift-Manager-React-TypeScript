@@ -3,7 +3,8 @@
 
 .menu {
   display: flex;
-  padding: 20px $padding-horizontal;
+  padding: 1em $padding-horizontal;
+  min-width: 5em;
   @media (max-width: $desktop_xsm) {
     padding: 20px $padding-horizontal-mobile;
   }
@@ -19,7 +20,7 @@
   }
   &__link {
     list-style-type: none;
-    padding: 0 20px;
+    padding: 0 1em;
     a {
       color: $dark;
       cursor: pointer;

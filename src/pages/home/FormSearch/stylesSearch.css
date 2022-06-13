@@ -1,0 +1,72 @@
+
+
+.form_api{
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
+  position: relative;
+  height: 25em;
+  min-width:5em;
+  width: 20em;
+  left:2em;
+  border-radius: 20px;
+
+}
+
+.input_search{
+  border: 0.2em solid #86c1f8;
+  position:relative;
+  left:1em;
+}
+
+.label_search{
+    text-align: center;
+    position: relative;
+    left: 1em;
+    color:rgb(255, 255, 255);
+    text-shadow:2px 2px 5px #000000;
+    font-family: 'Rubik', sans-serif; 
+}
+
+.button_submit{
+  width: 15em;
+  margin-top: 0.5em;
+   background: #6bc7fc;
+    color: #15066d;
+    font-Size: 1em;
+    font-family: 'Rubik', sans-serif; 
+    border-radius: 0.5em;
+    font-weight: 500;
+    position:relative;
+    left:1.5em;
+    cursor: pointer;
+}
+
+.button_submit:hover{
+  color:#000000;
+  background:#0d8bd4;
+  box-shadow:2px 2px 1em#020474;
+}
+
+.information{
+  background:#f3f3f3;
+  padding: 2em;
+  width: 20em;
+  margin-top: 1em;
+  position:relative;
+  left:10em;
+}
+
+.information_title{
+  text-align: center;
+    color:rgb(4, 24, 116);
+    text-shadow:2px 2px 10.5em #1317e9;
+    font-family: 'Rubik', sans-serif; 
+}
+
+.information_content{
+  text-align: center;
+    color:rgb(4, 24, 116);
+    text-shadow:2px 2px 10.5em #1317e9;
+    font-family: 'Rubik', sans-serif;
+}

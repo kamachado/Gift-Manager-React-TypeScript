@@ -7,7 +7,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  height: 300px;
+  min-width: 39.5em;
+  min-height: 5em;
+  height: 20em;
+
   padding: 0px $padding-horizontal;
   @media (max-width: $desktop_xsm) {
     padding: 0px $padding-horizontal-mobile;
@@ -20,9 +23,10 @@
   }
   &__text {
     color: white;
-    font-size: 5rem;
-    min-width: 400px;
-    width: 40%;
-    margin-left:2em ;
+    font-size: 5em;
+    min-width: 0.05em;
+    min-height:0.05em;
+    width: 20em;
+    margin-left:3em ;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {Table,TableHeader,Tbody,Th,Td} from './styles';
+import {Table,TableHeader,Tbody,Th,Td} from './stylesTable';
 
 
 interface DataDepartment {
@@ -11,9 +11,9 @@ interface DataDepartment {
 
 
 export default function TableDepartment() {
-  const [listPerson, setListPerson] = useState<DataDepartment[]>([]);
+  const [listDepartment, setListDepartment] = useState<DataDepartment[]>([]);
   function searchDepartment(): void {
-    fetch('http://localhost:8081/department').then((res) => res.json()).then((json) => setListPerson(json));
+    fetch('http://localhost:8081/department').then((res) => res.json()).then((json) => setListDepartment(json));
   }
   useEffect(searchDepartment, []);
 
@@ -45,7 +45,7 @@ export default function TableDepartment() {
         </tr>
       </TableHeader>
       <Tbody >
-        {listPerson?.map(item => <tr key={item.id}><Td>{item.id}</Td><Td>{item.Name}</Td><Td>{item.Person_Responsible_Id}</Td><Td><button onClick={()=>removeDepartmentByID(item.id)} style={{  width: '5em',background:'#004AAD',color:'white',fontSize:'1em'}} >remove</button></Td></tr>)}
+        {listDepartment?.map(item => <tr key={item.id}><Td>{item.id}</Td><Td>{item.Name}</Td><Td>{item.Person_Responsible_Id}</Td><Td><button onClick={()=>removeDepartmentByID(item.id)} style={{  width: '5em',background:'#004AAD',color:'white',fontSize:'1em'}} >remove</button></Td></tr>)}
       </Tbody>
     </Table>
   );

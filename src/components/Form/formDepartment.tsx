@@ -7,8 +7,6 @@ interface dataDepartment{
 }
 
 
-
-
 export default function FormDepartment() {
 
   const [nameInput,setNameInput]=useState('');
@@ -28,7 +26,6 @@ export default function FormDepartment() {
     }
   }
 
-
   async function postDepartment(data:dataDepartment) {
     
     const res = await fetch('http://localhost:8081/department',{
@@ -42,6 +39,7 @@ export default function FormDepartment() {
     }
     return true;
   }
+
   return (
     <form className="form_api">
       <label >Nome do setor</label>

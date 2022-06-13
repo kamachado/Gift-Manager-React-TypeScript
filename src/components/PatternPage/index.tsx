@@ -1,7 +1,7 @@
-import styles from './PaginaPadrao.module.scss';
+import styles from './PagePattern.module.scss';
 import { Outlet } from 'react-router-dom';
 
-export default function PaginaPadrao() {
+export default function PagePattern () {
   return (
     <>
       <header className={styles.header}>

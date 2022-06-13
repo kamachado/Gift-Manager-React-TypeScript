@@ -12,7 +12,7 @@
 
 .container{
      
-    min-width: 200px;
+    min-width: 20em;
     background: #004AAD;
     width: 50em;
     height:40em;
@@ -21,9 +21,9 @@
     border-style:double;
     border-radius: 0.5em;
     box-shadow:2px 2px 2px  #000000;
-    margin-top:2em;
+    margin-top:5em;
     position: relative;
-    top:0%;
+    top:1em;
     bottom: 10em;
     max-height: 45em;
     overflow: auto;

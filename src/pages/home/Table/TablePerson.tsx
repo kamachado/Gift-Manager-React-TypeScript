@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Table, TableHeader, Tbody, Th, Td } from './styles';
+import { Table, TableHeader, Tbody, Th, Td } from './stylesTable';
 
 
 interface DataPerson {
